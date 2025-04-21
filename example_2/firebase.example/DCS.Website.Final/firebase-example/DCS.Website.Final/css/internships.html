@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship and Career Opportunities - Digital and Computational Studies</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/internships.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Bates</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <ul>
+                <li><a href="index.html">Digital and Computational Studies</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header Section -->
+        <section class="page-header">
+            <div class="container">
+                <h2>Internship and Career Opportunities</h2>
+                <div class="breadcrumb">
+                    <span><a href="index.html">Home</a></span> > <span><a href="index.html">Digital and Computational Studies</a></span> > <span>Internship and Career Opportunities</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section id="opportunity-filters" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Find Opportunities</h2>
+                <div class="filter-container">
+                    <div class="filter-group">
+                        <label for="opportunity-type">Opportunity Type:</label>
+                        <select id="opportunity-type" class="filter-select">
+                            <option value="all">All Types</option>
+                            <option value="internship">Internships</option>
+                            <option value="job">Full-time Positions</option>
+                            <option value="research">Research Opportunities</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="career-area">Career Area:</label>
+                        <select id="career-area" class="filter-select">
+                            <option value="all">All Areas</option>
+                            <option value="software">Software Development</option>
+                            <option value="data">Data Analysis</option>
+                            <option value="design">Digital Media/Design</option>
+                            <option value="research">Research</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="location">Location:</label>
+                        <select id="location" class="filter-select">
+                            <option value="all">All Locations</option>
+                            <option value="northeast">Northeast</option>
+                            <option value="west">West Coast</option>
+                            <option value="remote">Remote</option>
+                            <option value="international">International</option>
+                        </select>
+                    </div>
+                    <button id="filter-button" class="filter-button">Apply Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Opportunities Section -->
+        <section id="current-opportunities" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Current Opportunities</h2>
+                <p class="section-intro">
+                    Explore current internship and job opportunities available to Bates DCS students and recent graduates. These positions are sourced from our industry partners, alumni network, and the Bates Career Development Center.
+                </p>
+                
+                <div class="opportunities-list">
+                    <!-- Software Development Opportunities -->
+                    <div class="opportunity-category">
+                        <h3>Software Development</h3>
+                        
+                        <div class="opportunity-item" data-type="internship" data-area="software" data-location="northeast">
+                            <div class="company-logo">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="opportunity-details">
+                                <div class="opportunity-header">
+                                    <h4>Software Engineering Intern</h4>
+                                    <span class="opportunity-location">Boston, MA (Hybrid)</span>
+                                </div>
+                                <p class="company-name">Financial Technology Solutions, Inc.</p>
+                                <div class="opportunity-info">
+                                    <span class="info-tag">Internship</span>
+                                    <span class="info-tag">Summer 2025</span>
+                                    <span class="info-tag">Paid</span>
+                                </div>
+                                <p class="description">
+                                    Work with a team of developers to build and enhance financial software applications. Gain hands-on experience with full-stack development using React, Node.js, and SQL databases. Collaborate on real projects that impact customers in the finance industry.
+                                </p>
+                                <div class="requirements">
+                                    <h5>Requirements:</h5>
+                                    <ul>
+                                        <li>Coursework in programming and web development</li>
+                                        <li>Experience with JavaScript and at least one backend language</li>
+                                        <li>Strong problem-solving skills</li>
+                                    </ul>
+                                </div>
+                                <div class="opportunity-footer">
+                                    <a href="#" class="apply-btn">Apply Now</a>
+                                    <span class="deadline">Application Deadline: January 15, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="opportunity-item" data-type="job" data-area="software" data-location="west">
+                            <div class="company-logo">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="opportunity-details">
+                                <div class="opportunity-header">
+                                    <h4>Junior Frontend Developer</h4>
+                                    <span class="opportunity-location">San Francisco, CA (On-site)</span>
+                                </div>
+                                <p class="company-name">Innovate Tech Solutions</p>
+                                <div class="opportunity-info">
+                                    <span class="info-tag">Full-time</span>
+                                    <span class="info-tag">Entry-level</span>
+                                    <span class="info-tag">Bates Alumni Connection</span>
+                                </div>
+                                <p class="description">
+                                    Join our growing team to develop user interfaces for our SaaS platform. Create responsive designs, implement new features, and collaborate with UX designers and backend developers to deliver exceptional user experiences.
+                                </p>
+                                <div class="requirements">
+                                    <h5>Requirements:</h5>
+                                    <ul>
+                                        <li>Bachelor's degree in Computer Science or related field</li>
+                                        <li>Experience with HTML, CSS, JavaScript, and modern frameworks</li>
+                                        <li>Portfolio of web development projects</li>
+                                    </ul>
+                                </div>
+                                <div class="opportunity-footer">
+                                    <a href="#" class="apply-btn">Apply Now</a>
+                                    <span class="deadline">Position Open Until Filled</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Data Analysis Opportunities -->
+                    <div class="opportunity-category">
+                        <h3>Data Analysis</h3>
+                        
+                        <div class="opportunity-item" data-type="internship" data-area="data" data-location="remote">
+                            <div class="company-logo">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="opportunity-details">
+                                <div class="opportunity-header">
+                                    <h4>Data Science Intern</h4>
+                                    <span class="opportunity-location">Remote (US-based)</span>
+                                </div>
+                                <p class="company-name">Global Analytics Partners</p>
+                                <div class="opportunity-info">
+                                    <span class="info-tag">Internship</span>
+                                    <span class="info-tag">Spring 2025</span>
+                                    <span class="info-tag">Paid</span>
+                                </div>
+                                <p class="description">
+                                    Assist our data science team in analyzing large datasets, developing predictive models, and creating data visualizations. Help translate data insights into actionable business recommendations.
+                                </p>
+                                <div class="requirements">
+                                    <h5>Requirements:</h5>
+                                    <ul>
+                                        <li>Coursework in statistics, data analysis, or machine learning</li>
+                                        <li>Experience with Python, R, or similar tools</li>
+                                        <li>Familiarity with data visualization techniques</li>
+                                    </ul>
+                                </div>
+                                <div class="opportunity-footer">
+                                    <a href="#" class="apply-btn">Apply Now</a>
+                                    <span class="deadline">Application Deadline: December 1, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="opportunity-item" data-type="job" data-area="data" data-location="northeast">
+                            <div class="company-logo">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="opportunity-details">
+                                <div class="opportunity-header">
+                                    <h4>Business Intelligence Analyst</h4>
+                                    <span class="opportunity-location">New York, NY (Hybrid)</span>
+                                </div>
+                                <p class="company-name">Eastern Financial Group</p>
+                                <div class="opportunity-info">
+                                    <span class="info-tag">Full-time</span>
+                                    <span class="info-tag">Entry-level</span>
+                                </div>
+                                <p class="description">
+                                    Analyze business data to identify trends, create reports, and develop dashboards that inform strategic decision-making. Collaborate with various departments to understand their data needs and deliver insights.
+                                </p>
+                                <div class="requirements">
+                                    <h5>Requirements:</h5>
+                                    <ul>
+                                        <li>Bachelor's degree in a quantitative field</li>
+                                        <li>Experience with SQL and data visualization tools</li>
+                                        <li>Strong analytical and communication skills</li>
+                                    </ul>
+                                </div>
+                                <div class="opportunity-footer">
+                                    <a href="#" class="apply-btn">Apply Now</a>
+                                    <span class="deadline">Application Deadline: November 30, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Digital Media/Design Opportunities -->
+                    <div class="opportunity-category">
+                        <h3>Digital Media/Design</h3>
+                        
+                        <div class="opportunity-item" data-type="internship" data-area="design" data-location="west">
+                            <div class="company-logo">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="opportunity-details">
+                                <div class="opportunity-header">
+                                    <h4>UX/UI Design Intern</h4>
+                                    <span class="opportunity-location">Seattle, WA (On-site)</span>
+                                </div>
+                                <p class="company-name">User First Design Studio</p>
+                                <div class="opportunity-info">
+                                    <span class="info-tag">Internship</span>
+                                    <span class="info-tag">Summer 2025</span>
+                                    <span class="info-tag">Paid</span>
+                                </div>
+                                <p class="description">
+                                    Contribute to user experience research, wireframing, and interface design for web and mobile applications. Learn from experienced designers and develop your portfolio with real client projects.
+                                </p>
+                                <div class="requirements">
+                                    <h5>Requirements:</h5>
+                                    <ul>
+                                        <li>Coursework in design, human-computer interaction, or related fields</li>
+                                        <li>Experience with design tools (Figma, Adobe XD, etc.)</li>
+                                        <li>Understanding of design principles and user-centered design</li>
+                                    </ul>
+                                </div>
+                                <div class="opportunity-footer">
+                                    <a href="#" class="apply-btn">Apply Now</a>
+                                    <span class="deadline">Application Deadline: February 28, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Industry Partnerships Section -->
+        <section id="industry-partnerships" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Industry Partnerships</h2>
+                <p class="section-intro">
+                    The Digital and Computational Studies program maintains strong relationships with industry partners who regularly hire Bates students for internships and full-time positions.
+                </p>
+                
+                <div class="partners-grid">
+                    <div class="partner">
+                        <div class="partner-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4>Tech Company Partners</h4>
+                        <p>Our students have interned and worked at leading technology companies, including Google, Microsoft, Amazon, and numerous startups founded by Bates alumni.</p>
+                    </div>
+                    
+                    <div class="partner">
+                        <div class="partner-logo">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Financial Services</h4>
+                        <p>We've established partnerships with financial institutions that value our students' combination of technical skills and liberal arts education for roles in fintech, data analysis, and software development.</p>
+                    </div>
+                    
+                    <div class="partner">
+                        <div class="partner-logo">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4>Research Institutions</h4>
+                        <p>Students interested in research careers have opportunities at leading laboratories, universities, and research-focused organizations in fields like AI, data science, and computational biology.</p>
+                    </div>
+                    
+                    <div class="partner">
+                        <div class="partner-logo">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Non-Profit Sector</h4>
+                        <p>For students passionate about social impact, we partner with non-profit organizations that need technical expertise in data analysis, digital communications, and technology implementation.</p>
+                    </div>
+                </div>
+                
+                <div class="partnership-cta">
+                    <h3>Are you an employer interested in hiring Bates DCS students?</h3>
+                    <p>Connect with us to post opportunities, attend our career events, or establish an ongoing recruitment relationship.</p>
+                    <a href="#" class="cta-button">Partner With Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Bates</h2>
+                    <p>Digital and Computational Studies</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Programs</a></li>
+                            <li><a href="#">Faculty</a></li>
+                            <li><a href="#">Research</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Career Services</a></li>
+                            <li><a href="#">Alumni Network</a></li>
+                            <li><a href="internships.html">Internships</a></li>
+                            <li><a href="#">Library</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-column">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li>Email: dcs@bates.edu</li>
+                            <li>Phone: (207) 555-1234</li>
+                            <li>Address: 2 Andrews Road, Lewiston, ME 04240</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Bates College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/internships.js"></script>
+</body>
+</html>

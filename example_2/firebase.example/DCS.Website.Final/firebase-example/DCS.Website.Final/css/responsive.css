@@ -1,0 +1,245 @@
+/* Responsive CSS for Bates Digital and Computational Studies Website */
+
+/* Large Screens (up to 1200px) */
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+/* Medium Screens (up to 992px) */
+@media screen and (max-width: 992px) {
+    .cards-container,
+    .career-paths,
+    .resources-section,
+    .options-grid,
+    .grad-programs,
+    .testimonials,
+    .alumni-profiles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+    
+    .footer-links {
+        width: 100%;
+    }
+}
+
+/* Small Screens (up to 768px) */
+@media screen and (max-width: 768px) {
+    /* Header */
+    .header-container {
+        flex-direction: column;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    /* Navigation */
+    .main-nav ul {
+        flex-direction: column;
+    }
+    
+    .submenu-nav ul {
+        flex-wrap: wrap;
+    }
+    
+    .submenu-nav li {
+        flex: 1 0 50%;
+        text-align: center;
+    }
+    
+    /* Sections */
+    .cards-container,
+    .career-paths,
+    .resources-section,
+    .options-grid,
+    .grad-programs,
+    .testimonials,
+    .alumni-profiles {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Profiles */
+    .opportunity-item,
+    .research-item,
+    .profile,
+    .testimonial {
+        flex-direction: column;
+    }
+    
+    .company-logo,
+    .profile-image {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    
+    .testimonial .profile-image {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    
+    /* Footer */
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .opportunity-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .deadline {
+        margin-bottom: 10px;
+    }
+    
+    .cta-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra Small Screens (up to 576px) */
+@media screen and (max-width: 576px) {
+    .opportunity-item {
+        flex-direction: column;
+    }
+    
+    .company-logo {
+        margin: 0 0 15px 0;
+        text-align: center;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    
+    .search-container {
+        width: 100%;
+    }
+    
+    .search-container input {
+        width: 100%;
+    }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+    .page-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+    }
+    
+    .submenu-nav li {
+        flex: 1 0 100%;
+    }
+    
+    .content-section {
+        padding: 20px 15px;
+    }
+    
+    .section-title {
+        margin: -20px -15px 15px;
+    }
+}
+
+/* Tablet Portrait Mode */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .profile {
+        flex-direction: row;
+    }
+    
+    .profile-image {
+        margin-right: 20px;
+    }
+    
+    .profile-details {
+        text-align: left;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+    }
+    
+    .main-nav, 
+    .search-container,
+    .contact-btn,
+    .apply-btn,
+    footer {
+        display: none;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    
+    .content-section {
+        margin-bottom: 20px;
+        padding: 15px;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .section-title {
+        color: #000;
+        background-color: #f5f5f5;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .page-header {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    /* Adjust grid layouts for print */
+    .cards-container,
+    .career-paths,
+    .resources-section,
+    .project-gallery {
+        display: block;
+    }
+    
+    .card,
+    .career-category,
+    .resource,
+    .project {
+        margin-bottom: 15px;
+        page-break-inside: avoid;
+    }
+}

@@ -1,0 +1,90 @@
+/* Override CSS to handle conflicts between Bates CSS and local styling */
+
+/* Ensure our layout and spacing takes priority */
+.container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 15px !important;
+}
+
+/* Keep our color scheme */
+.section-title {
+    color: white !important;
+    background-color: #8e1919 !important;
+}
+
+.card h4,
+.option-card h4,
+.profile-details h4,
+.opportunity-details h4,
+.research-details h4,
+.testimonial-content h4,
+.program-category h3,
+.resource h4,
+.category-header h4 {
+    color: #8e1919 !important;
+}
+
+/* Preserve our navigation styling */
+.submenu-nav {
+    background-color: #efefef !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+.submenu-nav li.active {
+    border-bottom: 3px solid #8e1919 !important;
+}
+
+.submenu-nav li.active a {
+    color: #8e1919 !important;
+    font-weight: 600 !important;
+}
+
+/* Keep our button styling */
+.apply-btn,
+.contact-btn,
+.cta-button {
+    background-color: #8e1919 !important;
+    color: white !important;
+}
+
+.apply-btn:hover,
+.contact-btn:hover,
+.cta-button:hover {
+    background-color: #6c1515 !important;
+    text-decoration: none !important;
+}
+
+/* Preserve grid layouts */
+.cards-container,
+.options-grid,
+.resources-section,
+.grad-programs,
+.testimonials,
+.alumni-profiles {
+    display: grid !important;
+}
+
+/* Make sure our media queries still work */
+@media screen and (max-width: 768px) {
+    .mobile-nav-toggle {
+        display: block !important;
+    }
+    
+    .main-nav ul:not(.active) {
+        display: none !important;
+    }
+    
+    .submenu-nav ul:not(.active) {
+        display: none !important;
+    }
+    
+    .cards-container,
+    .options-grid,
+    .resources-section,
+    .grad-programs,
+    .testimonials,
+    .alumni-profiles {
+        grid-template-columns: 1fr !important;
+    }
+} 

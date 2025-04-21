@@ -1,0 +1,173 @@
+/* Additional CSS for the After Bates page */
+
+/* Section Introduction Text */
+.section-intro {
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Expanded Career Paths */
+.career-paths-expanded {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.career-category h3 {
+    color: #8e1919;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #8e1919;
+}
+
+.category-items .item {
+    padding: 15px;
+    background-color: #f5f5f5;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.category-items .item h4 {
+    margin-bottom: 10px;
+    color: #8e1919;
+}
+
+.category-items .item p {
+    margin-bottom: 10px;
+}
+
+.category-items .item .companies {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Expanded Resources Section */
+.resources-section-expanded {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.resource {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.resource h4 {
+    color: #8e1919;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.resource p {
+    margin-bottom: 15px;
+}
+
+.resource-details {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.resource-details li {
+    margin-bottom: 5px;
+}
+
+.resource-link {
+    display: inline-block;
+    background-color: #8e1919;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resource-link:hover {
+    background-color: #6c1515;
+    text-decoration: none;
+}
+
+/* Success Stories */
+.success-stories-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.story {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.story-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info h4 {
+    color: #8e1919;
+    margin-bottom: 5px;
+}
+
+.profile-info .position {
+    font-weight: bold;
+}
+
+.story-content p {
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.read-more {
+    display: inline-block;
+    color: #8e1919;
+    font-weight: bold;
+}
+
+/* Responsive Styles for After Bates page */
+@media screen and (max-width: 992px) {
+    .career-paths-expanded {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .career-paths-expanded,
+    .resources-section-expanded {
+        grid-template-columns: 1fr;
+    }
+    
+    .story-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-image {
+        margin: 0 auto 15px;
+    }
+}

@@ -1,0 +1,17 @@
+/* Placeholder image fallbacks */
+.profile-image img[src="images/placeholder-profile.jpg"],
+.profile-image img[src="images/placeholder-faculty.jpg"] {
+    background-color: #ddd;
+    position: relative;
+}
+
+.profile-image img[src="images/placeholder-profile.jpg"]::before,
+.profile-image img[src="images/placeholder-faculty.jpg"]::before {
+    content: "👤";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: #888;
+} 
